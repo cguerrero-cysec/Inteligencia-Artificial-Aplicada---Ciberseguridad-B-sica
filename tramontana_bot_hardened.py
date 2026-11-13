@@ -1,8 +1,6 @@
 """
 tramontana_bot.py  -  VERSION ENDURECIDA (hardening)
-App de ejemplo para la practica de auditoria - IA Aplicada UCAB.
 Asistente de atencion al cliente de "Tramontana Logistica" (datos ficticios).
-Corre sobre el modelo local del Spark (API compatible con OpenAI).
 
 Esta version corrige las 8 fallas plantadas en la version vulnerable. Cada
 correccion esta marcada en el codigo con  # [FIX LLMxx]  para poder mostrar el
