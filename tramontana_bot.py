@@ -4,41 +4,17 @@ tramontana_bot.py  -  Demo de concientizacion en ciberseguridad (Realty)
 Asistente virtual de "Tramontana Envios", una empresa FICTICIA de encomiendas
 en Venezuela (al estilo Tealca / MRW / Zoom). Datos 100% inventados.
 
-Esta es una version VULNERABLE A PROPOSITO. Su unico fin es demostrar, en vivo,
+Esta es una version VULNERABLE INTENCIONALMENTE. Su unico fin es demostrar, en vivo,
 como una app basada en IA sin controles de seguridad puede ser secuestrada por
 un usuario avanzado para robar informacion, afectar la operacion o tomar control
 del servidor.
 
-NOVEDADES frente a la version de clase:
-  * Memoria dentro de cada conversacion (el asistente recuerda el hilo).
-  * "Nueva conversacion" (borra la memoria; no hay memoria entre conversaciones).
-  * Datos ficticios realistas: guias de envio y cotizacion de costos.
-  * Entrada por CAMARA (VLM): se le muestra una hoja a la camara y el modelo la
-    lee. Sirve para la inyeccion de prompt "por imagen" en vivo.
-  * Selector de camaras con nombres, deteccion de conexiones y vista previa.
-    Recuerda la ultima camara que funciono en este navegador. Permite reintentar
-    ante permisos denegados, camara ocupada o desconexion, sin reiniciar la app.
-    Solo solicita VIDEO: el microfono sigue disponible para Teams.
-
-Corre sobre Ollama local. Pensado para una laptop lenta: respuestas cortas,
-contexto acotado y modelo "caliente" (keep_alive).
-
 Uso rapido:
-    pip install flask requests --break-system-packages     # ver guia de despliegue
+    pip install flask requests --break-system-packages  
     MODEL_NAME=gemma3:4b python3 tramontana_bot.py
     Abrir EN LA MISMA LAPTOP:  http://localhost:7000
     (La camara del navegador SOLO funciona en localhost o HTTPS.)
 
-Antes de presentar:
-    Conecta los equipos del auditorio y abre Teams. En Tramontana pulsa Camara,
-    permite el acceso y selecciona el dispositivo; pulsa "Usar camara" y verifica
-    la vista previa antes de capturar. "Detectar camaras" actualiza la lista.
-    Si Teams ocupa la misma camara, usa otra (por ejemplo, la integrada de la
-    laptop) o libera esa camara en Teams. La app no puede forzar su uso compartido.
-    Solo se muestran los dispositivos que el sistema y el navegador exponen;
-    compartir pantalla por si solo no garantiza acceso a la camara del auditorio.
-    No se requieren dependencias nuevas. El chat y las fallas de la demo siguen
-    funcionando igual; estos cambios se limitan a la interfaz de camara.
 """
 
 import os
