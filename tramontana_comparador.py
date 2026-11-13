@@ -1,6 +1,6 @@
 """
-tramontana_comparador.py  -  DEMO DE CLASE (vulnerable vs. endurecido lado a lado)
-IA Aplicada - UCAB. Comparador en vivo para el cierre de la sesion de auditoria.
+tramontana_comparador.py  -  DEMO (vulnerable vs. endurecido lado a lado)
+Comparador en vivo para el cierre de la sesion de auditoria.
 
 Una sola pagina con DOS columnas que apuntan al MISMO modelo local del Spark:
     - Izquierda  (rojo):  logica VULNERABLE  = copia fiel de tramontana_bot.py original
